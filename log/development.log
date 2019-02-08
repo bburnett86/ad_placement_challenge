@@ -1,0 +1,199 @@
+  [1m[35m (1.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ad_challenge_development"[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ad_challenge_test"[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (571.6ms)[0m  [1m[35mCREATE DATABASE "ad_challenge_development" ENCODING = 'unicode'[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (409.2ms)[0m  [1m[35mCREATE DATABASE "ad_challenge_test" ENCODING = 'unicode'[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (28.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6435968195590993605)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+Migrating to CreateDeliveries (20190207204006)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (14.3ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" bigserial primary key, "date" date, "impressions" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190207204006_create_deliveries.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190207204006"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+Migrating to CreatePlacements (20190207204031)
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (18.2ms)[0m  [1m[35mCREATE TABLE "placements" ("id" bigserial primary key, "name" character varying, "start" date, "end" date, "cpm" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190207204031_create_placements.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190207204031"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (6.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-02-08 18:27:30.736567"], ["updated_at", "2019-02-08 18:27:30.736567"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6435968195590993605)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mPlacement Load (0.4ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlacement Create (0.4ms)[0m  [1m[32mINSERT INTO "placements" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["id", 1], ["created_at", "2019-02-08 18:27:44.369225"], ["updated_at", "2019-02-08 18:27:44.369225"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" ORDER BY "placements"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPlacement Destroy (8.6ms)[0m  [1m[31mDELETE FROM "placements" WHERE "placements"."id" = $1[0m  [["id", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 LIMIT $3[0m  [["id", 1], ["name", "Hello"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlacement Create (0.2ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", 1], ["name", "Hello"], ["created_at", "2019-02-08 18:28:31.117083"], ["updated_at", "2019-02-08 18:28:31.117083"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPlacement Load (6.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" IS NULL AND "placements"."cpm" = $4 LIMIT $5[0m  [["id", 1], ["name", "Sports"], ["start", "0011-01-17"], ["cpm", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlacement Create (26.0ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "start", "cpm", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["name", "Sports"], ["start", "0011-01-17"], ["cpm", 5], ["created_at", "2019-02-08 18:30:21.223220"], ["updated_at", "2019-02-08 18:30:21.223220"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (223.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ad_challenge_development"[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (204.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ad_challenge_test"[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (615.5ms)[0m  [1m[35mCREATE DATABASE "ad_challenge_development" ENCODING = 'unicode'[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (420.0ms)[0m  [1m[35mCREATE DATABASE "ad_challenge_test" ENCODING = 'unicode'[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6435968195590993605)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+Migrating to CreateDeliveries (20190207204006)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" bigserial primary key, "date" date, "impressions" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190207204006_create_deliveries.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190207204006"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+Migrating to CreatePlacements (20190207204031)
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE TABLE "placements" ("id" bigserial primary key, "name" character varying, "start" date, "end" date, "cpm" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190207204031_create_placements.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190207204031"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-02-08 18:30:51.734148"], ["updated_at", "2019-02-08 18:30:51.734148"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6435968195590993605)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mPlacement Load (0.4ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" IS NULL AND "placements"."cpm" = $4 LIMIT $5[0m  [["id", 1], ["name", "Sports"], ["start", "0011-01-17"], ["cpm", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlacement Create (0.8ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "start", "cpm", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["name", "Sports"], ["start", "0011-01-17"], ["cpm", 5], ["created_at", "2019-02-08 18:31:05.359303"], ["updated_at", "2019-02-08 18:31:05.359303"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPlacement Load (0.6ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" IS NULL AND "placements"."cpm" = $4 LIMIT $5[0m  [["id", 2], ["name", "Business"], ["start", "0012-01-17"], ["cpm", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlacement Create (0.3ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "start", "cpm", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 2], ["name", "Business"], ["start", "0012-01-17"], ["cpm", 8], ["created_at", "2019-02-08 18:31:05.365722"], ["updated_at", "2019-02-08 18:31:05.365722"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" IS NULL AND "placements"."cpm" = $4 LIMIT $5[0m  [["id", 3], ["name", "Travel"], ["start", "0011-01-17"], ["cpm", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlacement Create (0.3ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "start", "cpm", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 3], ["name", "Travel"], ["start", "0011-01-17"], ["cpm", 3], ["created_at", "2019-02-08 18:31:05.368829"], ["updated_at", "2019-02-08 18:31:05.368829"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" IS NULL AND "placements"."cpm" = $4 LIMIT $5[0m  [["id", 4], ["name", "Politics"], ["start", "0012-01-17"], ["cpm", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlacement Create (0.2ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "start", "cpm", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 4], ["name", "Politics"], ["start", "0012-01-17"], ["cpm", 6], ["created_at", "2019-02-08 18:31:05.382813"], ["updated_at", "2019-02-08 18:31:05.382813"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (209.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ad_challenge_development"[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (207.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ad_challenge_test"[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (567.6ms)[0m  [1m[35mCREATE DATABASE "ad_challenge_development" ENCODING = 'unicode'[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (413.4ms)[0m  [1m[35mCREATE DATABASE "ad_challenge_test" ENCODING = 'unicode'[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6435968195590993605)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+Migrating to CreateDeliveries (20190207204006)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" bigserial primary key, "date" date, "impressions" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190207204006_create_deliveries.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190207204006"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+Migrating to CreatePlacements (20190207204031)
+  [1m[35m (8.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE "placements" ("id" bigserial primary key, "name" character varying, "start" date, "end" date, "cpm" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190207204031_create_placements.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190207204031"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-02-08 18:33:12.356604"], ["updated_at", "2019-02-08 18:33:12.356604"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6435968195590993605)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
