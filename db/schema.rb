@@ -18,8 +18,10 @@ ActiveRecord::Schema.define(version: 2019_02_07_204031) do
   create_table "deliveries", force: :cascade do |t|
     t.date "date"
     t.integer "impressions"
+    t.bigint "placement_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["placement_id"], name: "index_deliveries_on_placement_id"
   end
 
   create_table "placements", force: :cascade do |t|
