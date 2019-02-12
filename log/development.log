@@ -2791,3 +2791,1542 @@ Migrating to CreatePlacements (20190207204031)
   ↳ app/models/delivery.rb:11
   [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPlacement Load (0.5ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" = $4 AND "placements"."cpm" = $5 LIMIT $6[0m  [["id", 1], ["name", "Sports"], ["start", "2017-11-01"], ["end", "2017-11-30"], ["cpm", 5], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" = $4 AND "placements"."cpm" = $5 LIMIT $6[0m  [["id", 2], ["name", "Business"], ["start", "2017-12-01"], ["end", "2017-12-31"], ["cpm", 8], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" = $4 AND "placements"."cpm" = $5 LIMIT $6[0m  [["id", 3], ["name", "Travel"], ["start", "2017-11-01"], ["end", "2017-11-30"], ["cpm", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" = $4 AND "placements"."cpm" = $5 LIMIT $6[0m  [["id", 4], ["name", "Politics"], ["start", "2017-12-01"], ["end", "2017-12-31"], ["cpm", 6], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.5ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-01"], ["impressions", 33427], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.5ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-02"], ["impressions", 30311], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.5ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-03"], ["impressions", 38048], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-04"], ["impressions", 32167], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-05"], ["impressions", 38673], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-06"], ["impressions", 34793], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-07"], ["impressions", 39949], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-08"], ["impressions", 37360], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-09"], ["impressions", 39987], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-10"], ["impressions", 37955], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-11"], ["impressions", 31069], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-12"], ["impressions", 37480], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.8ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-13"], ["impressions", 38894], ["LIMIT", 1]]
+  [1m[36mDelivery Load (1.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-14"], ["impressions", 36981], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-15"], ["impressions", 31890], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-16"], ["impressions", 39931], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-17"], ["impressions", 34084], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-18"], ["impressions", 39532], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-19"], ["impressions", 37740], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-20"], ["impressions", 38806], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-21"], ["impressions", 35822], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-22"], ["impressions", 36812], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-23"], ["impressions", 31383], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.5ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-24"], ["impressions", 39954], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.6ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-25"], ["impressions", 39769], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.7ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-26"], ["impressions", 39068], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-27"], ["impressions", 36734], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-28"], ["impressions", 30356], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-29"], ["impressions", 33657], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-30"], ["impressions", 30944], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-01"], ["impressions", 54957], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-02"], ["impressions", 54470], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-03"], ["impressions", 52565], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-04"], ["impressions", 58863], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-05"], ["impressions", 57099], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-06"], ["impressions", 42505], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-07"], ["impressions", 53434], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-08"], ["impressions", 53613], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-09"], ["impressions", 45039], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-10"], ["impressions", 55141], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-11"], ["impressions", 57859], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-12"], ["impressions", 47197], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-13"], ["impressions", 41949], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-14"], ["impressions", 41445], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-15"], ["impressions", 40756], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-16"], ["impressions", 51087], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-17"], ["impressions", 49960], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-18"], ["impressions", 56026], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-19"], ["impressions", 46630], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-20"], ["impressions", 53828], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-21"], ["impressions", 57718], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-22"], ["impressions", 42603], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-23"], ["impressions", 46873], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-24"], ["impressions", 50273], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-25"], ["impressions", 56286], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-26"], ["impressions", 55753], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-27"], ["impressions", 59560], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-28"], ["impressions", 52174], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-29"], ["impressions", 55779], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-30"], ["impressions", 57135], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-31"], ["impressions", 59381], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-01"], ["impressions", 35905], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-02"], ["impressions", 30860], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-03"], ["impressions", 35514], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-04"], ["impressions", 30110], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-05"], ["impressions", 33436], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-06"], ["impressions", 32828], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-07"], ["impressions", 35166], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-08"], ["impressions", 31012], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-09"], ["impressions", 30371], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-10"], ["impressions", 30970], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-11"], ["impressions", 30690], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-12"], ["impressions", 39751], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-13"], ["impressions", 37785], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-14"], ["impressions", 39346], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-15"], ["impressions", 30946], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-16"], ["impressions", 34036], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-17"], ["impressions", 36279], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-18"], ["impressions", 39872], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-19"], ["impressions", 37032], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-20"], ["impressions", 33466], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-21"], ["impressions", 38415], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-22"], ["impressions", 39062], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.6ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-23"], ["impressions", 37263], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.7ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-24"], ["impressions", 33616], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.7ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-25"], ["impressions", 32984], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-26"], ["impressions", 36756], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-27"], ["impressions", 31429], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-28"], ["impressions", 36614], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-29"], ["impressions", 33360], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-30"], ["impressions", 31092], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-01"], ["impressions", 46142], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-02"], ["impressions", 46232], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-03"], ["impressions", 40794], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-04"], ["impressions", 42719], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-05"], ["impressions", 42091], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-06"], ["impressions", 40404], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-07"], ["impressions", 56046], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-08"], ["impressions", 56429], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-09"], ["impressions", 48412], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-10"], ["impressions", 51005], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-11"], ["impressions", 52575], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-12"], ["impressions", 50673], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-13"], ["impressions", 48676], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-14"], ["impressions", 47749], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-15"], ["impressions", 44864], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-16"], ["impressions", 51137], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-17"], ["impressions", 59851], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-18"], ["impressions", 53048], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-19"], ["impressions", 51783], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-20"], ["impressions", 45440], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-21"], ["impressions", 53729], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-22"], ["impressions", 58633], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-23"], ["impressions", 51614], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-24"], ["impressions", 42967], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-25"], ["impressions", 40193], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-26"], ["impressions", 41972], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-27"], ["impressions", 53101], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-28"], ["impressions", 40293], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.8ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-29"], ["impressions", 58385], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.7ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-30"], ["impressions", 53277], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-31"], ["impressions", 59587], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."date" BETWEEN $1 AND $2[0m  [["date", "2017-11-22"], ["date", "2017-11-05"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (209.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ad_challenge_development"[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (207.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ad_challenge_test"[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (591.9ms)[0m  [1m[35mCREATE DATABASE "ad_challenge_development" ENCODING = 'unicode'[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (395.0ms)[0m  [1m[35mCREATE DATABASE "ad_challenge_test" ENCODING = 'unicode'[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6435968195590993605)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+Migrating to CreateDeliveries (20190207204006)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "deliveries" ("id" bigserial primary key, "date" date, "impressions" integer, "placement_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190207204006_create_deliveries.rb:3
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE  INDEX  "index_deliveries_on_placement_id" ON "deliveries"  ("placement_id")[0m
+  ↳ db/migrate/20190207204006_create_deliveries.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190207204006"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+Migrating to CreatePlacements (20190207204031)
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "placements" ("id" bigserial primary key, "name" character varying, "start" date, "end" date, "cpm" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190207204031_create_placements.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190207204031"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-02-12 16:04:47.204071"], ["updated_at", "2019-02-12 16:04:47.204071"]]
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6435968195590993605)[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Candied_Island/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mPlacement Load (0.5ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" = $4 AND "placements"."cpm" = $5 LIMIT $6[0m  [["id", 1], ["name", "Sports"], ["start", "2017-11-01"], ["end", "2017-11-30"], ["cpm", 5], ["LIMIT", 1]]
+  ↳ app/models/placement.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/placement.rb:12
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1[0m  [["placement_id", 1]]
+  ↳ app/models/placement.rb:12
+  [1m[36mPlacement Create (0.5ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "start", "end", "cpm", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["id", 1], ["name", "Sports"], ["start", "2017-11-01"], ["end", "2017-11-30"], ["cpm", 5], ["created_at", "2019-02-12 16:04:48.653997"], ["updated_at", "2019-02-12 16:04:48.653997"]]
+  ↳ app/models/placement.rb:12
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/placement.rb:12
+  [1m[36mPlacement Load (0.4ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" = $4 AND "placements"."cpm" = $5 LIMIT $6[0m  [["id", 2], ["name", "Business"], ["start", "2017-12-01"], ["end", "2017-12-31"], ["cpm", 8], ["LIMIT", 1]]
+  ↳ app/models/placement.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/placement.rb:12
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1[0m  [["placement_id", 2]]
+  ↳ app/models/placement.rb:12
+  [1m[36mPlacement Create (0.2ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "start", "end", "cpm", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["id", 2], ["name", "Business"], ["start", "2017-12-01"], ["end", "2017-12-31"], ["cpm", 8], ["created_at", "2019-02-12 16:04:48.665307"], ["updated_at", "2019-02-12 16:04:48.665307"]]
+  ↳ app/models/placement.rb:12
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/placement.rb:12
+  [1m[36mPlacement Load (0.5ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" = $4 AND "placements"."cpm" = $5 LIMIT $6[0m  [["id", 3], ["name", "Travel"], ["start", "2017-11-01"], ["end", "2017-11-30"], ["cpm", 3], ["LIMIT", 1]]
+  ↳ app/models/placement.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/placement.rb:12
+  [1m[36mDelivery Load (0.5ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1[0m  [["placement_id", 3]]
+  ↳ app/models/placement.rb:12
+  [1m[36mPlacement Create (0.3ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "start", "end", "cpm", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["id", 3], ["name", "Travel"], ["start", "2017-11-01"], ["end", "2017-11-30"], ["cpm", 3], ["created_at", "2019-02-12 16:04:48.677399"], ["updated_at", "2019-02-12 16:04:48.677399"]]
+  ↳ app/models/placement.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/placement.rb:12
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 AND "placements"."name" = $2 AND "placements"."start" = $3 AND "placements"."end" = $4 AND "placements"."cpm" = $5 LIMIT $6[0m  [["id", 4], ["name", "Politics"], ["start", "2017-12-01"], ["end", "2017-12-31"], ["cpm", 6], ["LIMIT", 1]]
+  ↳ app/models/placement.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/placement.rb:12
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1[0m  [["placement_id", 4]]
+  ↳ app/models/placement.rb:12
+  [1m[36mPlacement Create (0.2ms)[0m  [1m[32mINSERT INTO "placements" ("id", "name", "start", "end", "cpm", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["id", 4], ["name", "Politics"], ["start", "2017-12-01"], ["end", "2017-12-31"], ["cpm", 6], ["created_at", "2019-02-12 16:04:48.681431"], ["updated_at", "2019-02-12 16:04:48.681431"]]
+  ↳ app/models/placement.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/placement.rb:12
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-01"], ["impressions", 33427], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.5ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-01"], ["impressions", 33427], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.695337"], ["updated_at", "2019-02-12 16:04:48.695337"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-02"], ["impressions", 30311], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-02"], ["impressions", 30311], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.705730"], ["updated_at", "2019-02-12 16:04:48.705730"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-03"], ["impressions", 38048], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-03"], ["impressions", 38048], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.716541"], ["updated_at", "2019-02-12 16:04:48.716541"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-04"], ["impressions", 32167], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-04"], ["impressions", 32167], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.725739"], ["updated_at", "2019-02-12 16:04:48.725739"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-05"], ["impressions", 38673], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-05"], ["impressions", 38673], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.729495"], ["updated_at", "2019-02-12 16:04:48.729495"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-06"], ["impressions", 34793], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-06"], ["impressions", 34793], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.733182"], ["updated_at", "2019-02-12 16:04:48.733182"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-07"], ["impressions", 39949], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-07"], ["impressions", 39949], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.736723"], ["updated_at", "2019-02-12 16:04:48.736723"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-08"], ["impressions", 37360], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-08"], ["impressions", 37360], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.740039"], ["updated_at", "2019-02-12 16:04:48.740039"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-09"], ["impressions", 39987], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-09"], ["impressions", 39987], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.743258"], ["updated_at", "2019-02-12 16:04:48.743258"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-10"], ["impressions", 37955], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-10"], ["impressions", 37955], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.746388"], ["updated_at", "2019-02-12 16:04:48.746388"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-11"], ["impressions", 31069], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-11"], ["impressions", 31069], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.749449"], ["updated_at", "2019-02-12 16:04:48.749449"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-12"], ["impressions", 37480], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-12"], ["impressions", 37480], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.752363"], ["updated_at", "2019-02-12 16:04:48.752363"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-13"], ["impressions", 38894], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-13"], ["impressions", 38894], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.755276"], ["updated_at", "2019-02-12 16:04:48.755276"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-14"], ["impressions", 36981], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-14"], ["impressions", 36981], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.758512"], ["updated_at", "2019-02-12 16:04:48.758512"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-15"], ["impressions", 31890], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-15"], ["impressions", 31890], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.762296"], ["updated_at", "2019-02-12 16:04:48.762296"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-16"], ["impressions", 39931], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-16"], ["impressions", 39931], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.771630"], ["updated_at", "2019-02-12 16:04:48.771630"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-17"], ["impressions", 34084], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-17"], ["impressions", 34084], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.775581"], ["updated_at", "2019-02-12 16:04:48.775581"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-18"], ["impressions", 39532], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-18"], ["impressions", 39532], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.778830"], ["updated_at", "2019-02-12 16:04:48.778830"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-19"], ["impressions", 37740], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-19"], ["impressions", 37740], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.782232"], ["updated_at", "2019-02-12 16:04:48.782232"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-20"], ["impressions", 38806], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-20"], ["impressions", 38806], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.785551"], ["updated_at", "2019-02-12 16:04:48.785551"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-21"], ["impressions", 35822], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-21"], ["impressions", 35822], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.788632"], ["updated_at", "2019-02-12 16:04:48.788632"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-22"], ["impressions", 36812], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-22"], ["impressions", 36812], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.792047"], ["updated_at", "2019-02-12 16:04:48.792047"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-23"], ["impressions", 31383], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-23"], ["impressions", 31383], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.795369"], ["updated_at", "2019-02-12 16:04:48.795369"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-24"], ["impressions", 39954], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-24"], ["impressions", 39954], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.798473"], ["updated_at", "2019-02-12 16:04:48.798473"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-25"], ["impressions", 39769], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-25"], ["impressions", 39769], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.801542"], ["updated_at", "2019-02-12 16:04:48.801542"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-26"], ["impressions", 39068], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-26"], ["impressions", 39068], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.804535"], ["updated_at", "2019-02-12 16:04:48.804535"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-27"], ["impressions", 36734], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-27"], ["impressions", 36734], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.807723"], ["updated_at", "2019-02-12 16:04:48.807723"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-28"], ["impressions", 30356], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-28"], ["impressions", 30356], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.810797"], ["updated_at", "2019-02-12 16:04:48.810797"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-29"], ["impressions", 33657], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-29"], ["impressions", 33657], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.814536"], ["updated_at", "2019-02-12 16:04:48.814536"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 1], ["date", "2017-11-30"], ["impressions", 30944], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-30"], ["impressions", 30944], ["placement_id", 1], ["created_at", "2019-02-12 16:04:48.817789"], ["updated_at", "2019-02-12 16:04:48.817789"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-01"], ["impressions", 54957], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-01"], ["impressions", 54957], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.821154"], ["updated_at", "2019-02-12 16:04:48.821154"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-02"], ["impressions", 54470], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-02"], ["impressions", 54470], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.824670"], ["updated_at", "2019-02-12 16:04:48.824670"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-03"], ["impressions", 52565], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-03"], ["impressions", 52565], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.828039"], ["updated_at", "2019-02-12 16:04:48.828039"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-04"], ["impressions", 58863], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-04"], ["impressions", 58863], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.831355"], ["updated_at", "2019-02-12 16:04:48.831355"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-05"], ["impressions", 57099], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-05"], ["impressions", 57099], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.834437"], ["updated_at", "2019-02-12 16:04:48.834437"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-06"], ["impressions", 42505], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-06"], ["impressions", 42505], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.837648"], ["updated_at", "2019-02-12 16:04:48.837648"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-07"], ["impressions", 53434], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-07"], ["impressions", 53434], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.840831"], ["updated_at", "2019-02-12 16:04:48.840831"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-08"], ["impressions", 53613], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-08"], ["impressions", 53613], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.844231"], ["updated_at", "2019-02-12 16:04:48.844231"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-09"], ["impressions", 45039], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-09"], ["impressions", 45039], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.847544"], ["updated_at", "2019-02-12 16:04:48.847544"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-10"], ["impressions", 55141], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-10"], ["impressions", 55141], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.851237"], ["updated_at", "2019-02-12 16:04:48.851237"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-11"], ["impressions", 57859], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-11"], ["impressions", 57859], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.854760"], ["updated_at", "2019-02-12 16:04:48.854760"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-12"], ["impressions", 47197], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-12"], ["impressions", 47197], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.857995"], ["updated_at", "2019-02-12 16:04:48.857995"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-13"], ["impressions", 41949], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-13"], ["impressions", 41949], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.860931"], ["updated_at", "2019-02-12 16:04:48.860931"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-14"], ["impressions", 41445], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-14"], ["impressions", 41445], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.863854"], ["updated_at", "2019-02-12 16:04:48.863854"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-15"], ["impressions", 40756], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-15"], ["impressions", 40756], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.866826"], ["updated_at", "2019-02-12 16:04:48.866826"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-16"], ["impressions", 51087], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-16"], ["impressions", 51087], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.869957"], ["updated_at", "2019-02-12 16:04:48.869957"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-17"], ["impressions", 49960], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-17"], ["impressions", 49960], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.872781"], ["updated_at", "2019-02-12 16:04:48.872781"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-18"], ["impressions", 56026], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-18"], ["impressions", 56026], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.877267"], ["updated_at", "2019-02-12 16:04:48.877267"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-19"], ["impressions", 46630], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-19"], ["impressions", 46630], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.880694"], ["updated_at", "2019-02-12 16:04:48.880694"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-20"], ["impressions", 53828], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-20"], ["impressions", 53828], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.883939"], ["updated_at", "2019-02-12 16:04:48.883939"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-21"], ["impressions", 57718], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-21"], ["impressions", 57718], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.887536"], ["updated_at", "2019-02-12 16:04:48.887536"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-22"], ["impressions", 42603], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-22"], ["impressions", 42603], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.891096"], ["updated_at", "2019-02-12 16:04:48.891096"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-23"], ["impressions", 46873], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-23"], ["impressions", 46873], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.895221"], ["updated_at", "2019-02-12 16:04:48.895221"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-24"], ["impressions", 50273], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-24"], ["impressions", 50273], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.900480"], ["updated_at", "2019-02-12 16:04:48.900480"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-25"], ["impressions", 56286], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-25"], ["impressions", 56286], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.911892"], ["updated_at", "2019-02-12 16:04:48.911892"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-26"], ["impressions", 55753], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-26"], ["impressions", 55753], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.922549"], ["updated_at", "2019-02-12 16:04:48.922549"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-27"], ["impressions", 59560], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-27"], ["impressions", 59560], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.931136"], ["updated_at", "2019-02-12 16:04:48.931136"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-28"], ["impressions", 52174], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-28"], ["impressions", 52174], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.934573"], ["updated_at", "2019-02-12 16:04:48.934573"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-29"], ["impressions", 55779], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-29"], ["impressions", 55779], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.938029"], ["updated_at", "2019-02-12 16:04:48.938029"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-30"], ["impressions", 57135], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-30"], ["impressions", 57135], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.941370"], ["updated_at", "2019-02-12 16:04:48.941370"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 2], ["date", "2017-12-31"], ["impressions", 59381], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-31"], ["impressions", 59381], ["placement_id", 2], ["created_at", "2019-02-12 16:04:48.944462"], ["updated_at", "2019-02-12 16:04:48.944462"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-01"], ["impressions", 35905], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-01"], ["impressions", 35905], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.947415"], ["updated_at", "2019-02-12 16:04:48.947415"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-02"], ["impressions", 30860], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-02"], ["impressions", 30860], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.950413"], ["updated_at", "2019-02-12 16:04:48.950413"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-03"], ["impressions", 35514], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-03"], ["impressions", 35514], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.953825"], ["updated_at", "2019-02-12 16:04:48.953825"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-04"], ["impressions", 30110], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-04"], ["impressions", 30110], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.957027"], ["updated_at", "2019-02-12 16:04:48.957027"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-05"], ["impressions", 33436], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-05"], ["impressions", 33436], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.960657"], ["updated_at", "2019-02-12 16:04:48.960657"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-06"], ["impressions", 32828], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-06"], ["impressions", 32828], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.964081"], ["updated_at", "2019-02-12 16:04:48.964081"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-07"], ["impressions", 35166], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-07"], ["impressions", 35166], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.967351"], ["updated_at", "2019-02-12 16:04:48.967351"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-08"], ["impressions", 31012], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-08"], ["impressions", 31012], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.970807"], ["updated_at", "2019-02-12 16:04:48.970807"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-09"], ["impressions", 30371], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-09"], ["impressions", 30371], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.974207"], ["updated_at", "2019-02-12 16:04:48.974207"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-10"], ["impressions", 30970], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-10"], ["impressions", 30970], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.977737"], ["updated_at", "2019-02-12 16:04:48.977737"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-11"], ["impressions", 30690], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-11"], ["impressions", 30690], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.981416"], ["updated_at", "2019-02-12 16:04:48.981416"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-12"], ["impressions", 39751], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-12"], ["impressions", 39751], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.984923"], ["updated_at", "2019-02-12 16:04:48.984923"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-13"], ["impressions", 37785], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-13"], ["impressions", 37785], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.988416"], ["updated_at", "2019-02-12 16:04:48.988416"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-14"], ["impressions", 39346], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-14"], ["impressions", 39346], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.991864"], ["updated_at", "2019-02-12 16:04:48.991864"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-15"], ["impressions", 30946], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-15"], ["impressions", 30946], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.995087"], ["updated_at", "2019-02-12 16:04:48.995087"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-16"], ["impressions", 34036], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-16"], ["impressions", 34036], ["placement_id", 3], ["created_at", "2019-02-12 16:04:48.998438"], ["updated_at", "2019-02-12 16:04:48.998438"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-17"], ["impressions", 36279], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-17"], ["impressions", 36279], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.002168"], ["updated_at", "2019-02-12 16:04:49.002168"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-18"], ["impressions", 39872], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-18"], ["impressions", 39872], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.009820"], ["updated_at", "2019-02-12 16:04:49.009820"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-19"], ["impressions", 37032], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-19"], ["impressions", 37032], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.013189"], ["updated_at", "2019-02-12 16:04:49.013189"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-20"], ["impressions", 33466], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-20"], ["impressions", 33466], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.016261"], ["updated_at", "2019-02-12 16:04:49.016261"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-21"], ["impressions", 38415], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-21"], ["impressions", 38415], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.019407"], ["updated_at", "2019-02-12 16:04:49.019407"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-22"], ["impressions", 39062], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-22"], ["impressions", 39062], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.022761"], ["updated_at", "2019-02-12 16:04:49.022761"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-23"], ["impressions", 37263], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-23"], ["impressions", 37263], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.026329"], ["updated_at", "2019-02-12 16:04:49.026329"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-24"], ["impressions", 33616], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-24"], ["impressions", 33616], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.029421"], ["updated_at", "2019-02-12 16:04:49.029421"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-25"], ["impressions", 32984], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-25"], ["impressions", 32984], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.032450"], ["updated_at", "2019-02-12 16:04:49.032450"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-26"], ["impressions", 36756], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-26"], ["impressions", 36756], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.035647"], ["updated_at", "2019-02-12 16:04:49.035647"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-27"], ["impressions", 31429], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-27"], ["impressions", 31429], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.038665"], ["updated_at", "2019-02-12 16:04:49.038665"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-28"], ["impressions", 36614], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-28"], ["impressions", 36614], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.041679"], ["updated_at", "2019-02-12 16:04:49.041679"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-29"], ["impressions", 33360], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-29"], ["impressions", 33360], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.044638"], ["updated_at", "2019-02-12 16:04:49.044638"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 3], ["date", "2017-11-30"], ["impressions", 31092], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-11-30"], ["impressions", 31092], ["placement_id", 3], ["created_at", "2019-02-12 16:04:49.048023"], ["updated_at", "2019-02-12 16:04:49.048023"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-01"], ["impressions", 46142], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-01"], ["impressions", 46142], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.051067"], ["updated_at", "2019-02-12 16:04:49.051067"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-02"], ["impressions", 46232], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-02"], ["impressions", 46232], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.054167"], ["updated_at", "2019-02-12 16:04:49.054167"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-03"], ["impressions", 40794], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-03"], ["impressions", 40794], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.057319"], ["updated_at", "2019-02-12 16:04:49.057319"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-04"], ["impressions", 42719], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-04"], ["impressions", 42719], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.060353"], ["updated_at", "2019-02-12 16:04:49.060353"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-05"], ["impressions", 42091], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-05"], ["impressions", 42091], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.063475"], ["updated_at", "2019-02-12 16:04:49.063475"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-06"], ["impressions", 40404], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-06"], ["impressions", 40404], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.066473"], ["updated_at", "2019-02-12 16:04:49.066473"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-07"], ["impressions", 56046], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-07"], ["impressions", 56046], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.069649"], ["updated_at", "2019-02-12 16:04:49.069649"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-08"], ["impressions", 56429], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-08"], ["impressions", 56429], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.073316"], ["updated_at", "2019-02-12 16:04:49.073316"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-09"], ["impressions", 48412], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-09"], ["impressions", 48412], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.076564"], ["updated_at", "2019-02-12 16:04:49.076564"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.3ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-10"], ["impressions", 51005], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.3ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-10"], ["impressions", 51005], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.080469"], ["updated_at", "2019-02-12 16:04:49.080469"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-11"], ["impressions", 52575], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-11"], ["impressions", 52575], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.084224"], ["updated_at", "2019-02-12 16:04:49.084224"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-12"], ["impressions", 50673], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-12"], ["impressions", 50673], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.087467"], ["updated_at", "2019-02-12 16:04:49.087467"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-13"], ["impressions", 48676], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-13"], ["impressions", 48676], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.090538"], ["updated_at", "2019-02-12 16:04:49.090538"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-14"], ["impressions", 47749], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-14"], ["impressions", 47749], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.093585"], ["updated_at", "2019-02-12 16:04:49.093585"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-15"], ["impressions", 44864], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-15"], ["impressions", 44864], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.096572"], ["updated_at", "2019-02-12 16:04:49.096572"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-16"], ["impressions", 51137], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-16"], ["impressions", 51137], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.099837"], ["updated_at", "2019-02-12 16:04:49.099837"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-17"], ["impressions", 59851], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-17"], ["impressions", 59851], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.102758"], ["updated_at", "2019-02-12 16:04:49.102758"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-18"], ["impressions", 53048], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-18"], ["impressions", 53048], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.105803"], ["updated_at", "2019-02-12 16:04:49.105803"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-19"], ["impressions", 51783], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-19"], ["impressions", 51783], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.108999"], ["updated_at", "2019-02-12 16:04:49.108999"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-20"], ["impressions", 45440], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-20"], ["impressions", 45440], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.111975"], ["updated_at", "2019-02-12 16:04:49.111975"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-21"], ["impressions", 53729], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-21"], ["impressions", 53729], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.115069"], ["updated_at", "2019-02-12 16:04:49.115069"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-22"], ["impressions", 58633], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-22"], ["impressions", 58633], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.118365"], ["updated_at", "2019-02-12 16:04:49.118365"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-23"], ["impressions", 51614], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-23"], ["impressions", 51614], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.121547"], ["updated_at", "2019-02-12 16:04:49.121547"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-24"], ["impressions", 42967], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-24"], ["impressions", 42967], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.124669"], ["updated_at", "2019-02-12 16:04:49.124669"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-25"], ["impressions", 40193], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-25"], ["impressions", 40193], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.127825"], ["updated_at", "2019-02-12 16:04:49.127825"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-26"], ["impressions", 41972], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-26"], ["impressions", 41972], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.131198"], ["updated_at", "2019-02-12 16:04:49.131198"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-27"], ["impressions", 53101], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-27"], ["impressions", 53101], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.134416"], ["updated_at", "2019-02-12 16:04:49.134416"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-28"], ["impressions", 40293], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-28"], ["impressions", 40293], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.137770"], ["updated_at", "2019-02-12 16:04:49.137770"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-29"], ["impressions", 58385], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-29"], ["impressions", 58385], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.141103"], ["updated_at", "2019-02-12 16:04:49.141103"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-30"], ["impressions", 53277], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.4ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-30"], ["impressions", 53277], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.144690"], ["updated_at", "2019-02-12 16:04:49.144690"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."placement_id" = $1 AND "deliveries"."date" = $2 AND "deliveries"."impressions" = $3 LIMIT $4[0m  [["placement_id", 4], ["date", "2017-12-31"], ["impressions", 59587], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Create (0.2ms)[0m  [1m[32mINSERT INTO "deliveries" ("date", "impressions", "placement_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2017-12-31"], ["impressions", 59587], ["placement_id", 4], ["created_at", "2019-02-12 16:04:49.148446"], ["updated_at", "2019-02-12 16:04:49.148446"]]
+  ↳ app/models/delivery.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/delivery.rb:11
+  [1m[36mDelivery Load (1.5ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."date" BETWEEN $1 AND $2[0m  [["date", "2017-11-22"], ["date", "2017-11-05"]]
+  [1m[36mDelivery Load (0.5ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."date" BETWEEN $1 AND $2[0m  [["date", "2017-11-22"], ["date", "2017-12-05"]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.8ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.9ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.7ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.6ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."date" BETWEEN $1 AND $2[0m  [["date", "2017-11-22"], ["date", "2017-11-05"]]
+  [1m[36mDelivery Load (0.5ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."date" BETWEEN $1 AND $2[0m  [["date", "2017-11-22"], ["date", "2017-12-05"]]
+  [1m[36mDelivery Load (0.5ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."date" BETWEEN $1 AND $2[0m  [["date", "2017-11-22"], ["date", "2017-12-05"]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.5ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.6ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.4ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.5ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.5ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mDelivery Load (0.4ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."date" BETWEEN $1 AND $2[0m  [["date", "2017-11-22"], ["date", "2017-12-05"]]
+  [1m[36mPlacement Load (1.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.4ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.3ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.1ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPlacement Load (0.2ms)[0m  [1m[34mSELECT  "placements".* FROM "placements" WHERE "placements"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
